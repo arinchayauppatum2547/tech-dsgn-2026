@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#profile-card {
+    width: 850px;
+    height: 500px;
+    background-color: #79A3C3;
+    border-radius: 70px;
+    position: relative;
+    display: flex;
+    padding: 50px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.photo-box {
+    width: 250px;
+    height: 300px;
+    background-color: #D2E2EC;
+    border-radius: 45px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-details {
+    color: #3A2119;
+    flex: 1;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.edu-info {
+    margin-top: 10px;
+}
+
+.card-quote {
+    margin-top: 25px;
+    color: #3A2119;
+
+}
+
+.skills-row {
+    margin-top: 150px;
+    display: flex;
+    color: #3A2119;
+    border-top: 1.5px solid rgba(93, 64, 55, 0.3);
+    padding-top: 15px;
+    margin-bottom: 150px;
+}
+
+.skill-item {
+    flex: 1;
+    text-align: center;
+    border-right: 1.5px solid rgba(93, 64, 55, 0.3);
+}
+
+.skill-item:last-child {
+    border-right: none;
+}
+
+.card-name {
+    position: absolute;
+    bottom: 45px;
+    left: 55px;
+    color: white;
+}
+
+.contact-info {
+    color: #3A2119;
+    position: absolute;
+    bottom: 45px;
+    right: 55px;
+    text-align: right;
+}

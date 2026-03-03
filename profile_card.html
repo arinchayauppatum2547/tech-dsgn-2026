@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arinchaya Profile Card</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        #profile-card {
+            width: 850px;
+            height: 500px;
+            background-color: #79A3C3;
+            border-radius: 70px;
+            position: relative;
+            display: flex;
+            padding: 50px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .photo-box {
+            width: 260px;
+            height: 320px;
+            background-color: #D2E2EC;
+            border-radius: 45px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-details {
+            flex: 1;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Ink Free', cursive;
+        }
+
+        .edu-info {
+            color: #3A2119;
+            font-size: 2rem;
+            line-height: 1.2;
+            margin-top: 10px;
+        }
+
+        .card-quote {
+            color: #3A2119;
+            margin-top: 30px;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 1;
+        }
+
+        .skills-row {
+            color: #3A2119;
+            margin-top: auto;
+            display: flex;
+            border-top: 1.5px solid #3A2119;
+            padding-top: 20px;
+            margin-bottom: 60px;
+        }
+
+        .skill-item {
+            flex: 1;
+            text-align: center;
+            font-size: 1.4rem;
+
+        }
+
+        .card-name {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 900;
+            font-size: 2.6rem;
+            line-height: 0.9;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            color: #3A2119;
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            text-align: right;
+            font-family: 'Ink Free', cursive;
+            font-size: 1rem;
+            line-height: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="profile-card">
+        <div class="photo-box">
+            <img src="img/profile.jpg" alt="Profile Image">
+        </div>
+
+        <div class="card-details">
+            <div class="edu-info">
+                Design student <br>
+                At Chulalongkorn University
+            </div>
+
+            <div class="card-quote">
+                "I have 99 problems, and a <br>
+                font is at least 98 of them."
+            </div>
+
+            <div class="skills-row">
+                <div class="skill-item">Space<br>Design</div>
+                <div class="skill-item" style="border-left: 1.5px solid white; border-right: 1.5px solid white;">
+                    Product<br>Design</div>
+                <div class="skill-item">Graphic<br>Design</div>
+            </div>
+        </div>
+
+        <div class="card-name">
+            ARINCHAYA <br> UPPATUM
+        </div>
+
+        <div class="contact-info">
+            @i.arin.u <br>
+            tel. 095-257-1521 <br>
+            arinchayauppatum2547@gmail.com
+        </div>
+    </div>
+
+</body>
+
+</html>

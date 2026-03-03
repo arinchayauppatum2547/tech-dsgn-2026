@@ -1,0 +1,75 @@
+:root {
+    --chambray: #79A3C3;
+    --espresso: #3A2119;
+    --glacier: #D2E2EC;
+    --bisque: #EBCDB7;
+    --clay: #957662;
+    --bg-dark: #1a242f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--glacier);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Background หมุนวนนวลๆ ตามโจทย์ */
+.bg-animation {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background:
+        radial-gradient(circle at center, var(--glacier) 0%, transparent 25%),
+        radial-gradient(circle at 30% 30%, var(--chambray) 0%, transparent 40%),
+        radial-gradient(circle at 70% 70%, var(--clay) 0%, transparent 40%),
+        var(--bg-dark);
+    animation: rotate 40s linear infinite;
+    z-index: -1;
+    filter: blur(70px);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    background: var(--espresso);
+    color: var(--glacier);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.button:hover {
+    background: var(--clay);
+    transform: translateY(-3px);
+}
+
+html {
+    scroll-behavior: smooth;
+}

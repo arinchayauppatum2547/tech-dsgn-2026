@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=VT323&display=swap');
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+h1 span {
+    background: linear-gradient(135deg, #79A3C3 0%, #EBCDB7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    color: var(--bisque);
+}
+
+p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.tech-badge,
+footer,
+.info-label {
+    font-family: 'VT323', monospace;
+    letter-spacing: 2px;
+}
+
+footer {
+    text-align: center;
+    padding: 4rem 0;
+    opacity: 0.6;
+}

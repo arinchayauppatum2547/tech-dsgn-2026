@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap');
+
+:root {
+    --brown-text: #5D4037;
+    --handwriting: 'Ink Free', 'Segoe Print', 'Comic Sans MS', cursive;
+}
+
+.card-details,
+.contact-info {
+    color: var(--brown-text);
+    font-family: var(--handwriting);
+}
+
+.edu-info {
+    font-size: 1.8rem;
+    line-height: 1.1;
+}
+
+.card-quote {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.skill-item {
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.card-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3rem;
+    line-height: 0.95;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
